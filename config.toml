@@ -1,6 +1,6 @@
 # Page settings
-baseurl = "localhost:1313"
-title = "SSML-Builder"
+baseurl = "ssmlbuilder.com"
+title = "SSML-Builder - Building Better Google Home and Amazon Alexa Skills"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
 

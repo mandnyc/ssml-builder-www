@@ -249,9 +249,9 @@ theme = "hugo-elate-theme"
       description = "Downloads"
       icon = "icon-briefcase"
       from = 0
-      to = 10000
+      to = 9789
       interval = 500
-      speed = 5000
+      speed = 7000
 
     [[params.counters.item]]
       description = "Lines of JavaScript code"

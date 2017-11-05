@@ -1,0 +1,47 @@
+	<section id="fh5co-intro">
+		<div class="container">
+			<div class="row row-bottom-padded-lg">
+				{{ range .Site.Params.intro.item }}
+				<div class="fh5co-block to-animate" style="background-image: url(images/{{ .img }});">
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text">
+						<img src="{{ .src }}" height="{{ .height }}" width="{{ .width }}"/>
+						<h2>{{ .title }}</h2>
+						<p>{{ .description }}</p>
+						<p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p>
+					</div>
+				</div>
+				{{ end }}
+
+
+			</div>
+
+			<div class="row watch-video text-center to-animate">
+				<h1>
+					How easy is it?
+				</h1>
+				<p>
+					Play with the code below and hit &nbsp;<img src="{{ .Site.Params.intro.src }}"/>
+				</p>
+				<script src="https://embed.runkit.com" data-element-id="intro-element"></script>
+
+			<!-- anywhere else on your page -->
+			<div id="intro-element">var Speech = require('ssml-builder');
+
+var speech = new Speech();
+speech.say('Hello');
+speech.pause('1s');
+speech.say('fellow Alexa developers');
+speech.pause('500ms');
+speech.say('Testing phone numbers');
+speech.sayAs({
+              word: "+1-377-777-1888",
+              interpret: "telephone"
+            });
+speech.ssml(true);</div>
+
+			</div>
+
+		</div>
+	</section>

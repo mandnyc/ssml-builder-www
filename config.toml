@@ -249,7 +249,7 @@ theme = "hugo-elate-theme"
       description = "Downloads"
       icon = "icon-briefcase"
       from = 0
-      to = 10,000
+      to = 10000
       interval = 500
       speed = 5000
 

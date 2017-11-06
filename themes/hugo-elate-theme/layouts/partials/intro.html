@@ -10,12 +10,12 @@
 						<h2>{{ .title }}</h2>
 						<p>{{ .description }}</p>
 						<p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p>
+						<a href="{{ .api }}">View API</a>
 					</div>
 				</div>
 				{{ end }}
-
-
 			</div>
+
 
 			<div class="row watch-video text-center to-animate">
 				<h1>
@@ -26,21 +26,21 @@
 				</p>
 				<script src="https://embed.runkit.com" data-element-id="intro-element"></script>
 
-			<!-- anywhere else on your page -->
-			<div id="intro-element">var Speech = require('ssml-builder');
-
-var speech = new Speech();
-speech.say('Hello');
-speech.pause('1s');
-speech.say('fellow Alexa developers');
-speech.pause('500ms');
-speech.say('Testing phone numbers');
-speech.sayAs({
-              word: "+1-377-777-1888",
-              interpret: "telephone"
-            });
-speech.ssml(true);</div>
-
+				<!-- anywhere else on your page -->
+				<div id="intro-element">
+					var Speech = require('ssml-builder');
+					var speech = new Speech();
+					speech.say('Hello');
+					speech.pause('1s');
+					speech.say('fellow Alexa developers');
+					speech.pause('500ms');
+					speech.say('Testing phone numbers');
+					speech.sayAs({
+					              word: "+1-377-777-1888",
+					              interpret: "telephone"
+					            });
+					speech.ssml(true);
+				</div>
 			</div>
 
 		</div>

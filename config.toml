@@ -189,7 +189,7 @@ theme = "hugo-elate-theme"
   [params.about]
     enable = true
     title = "Contributors"
-    description = "A group of awesome developers who are passionate about VOICE and our goal is to improve SSML-Builder as a collective."
+    description = "A group of awesome developers who are passionate about Voice and Open Source. Our goal is to improve SSML-Builder as a collective and make the creation of SSML easy for everyone."
 
     [[params.about.item]]
       name = "Mandy Chan"

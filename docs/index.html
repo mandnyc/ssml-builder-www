@@ -130,10 +130,11 @@
 					<div class="overlay-darker"></div>
 					<div class="overlay"></div>
 					<div class="fh5co-text">
-						<img src="http://logo-load.com/uploads/posts/2016-09/javascript-logo.png" height="100px" width="150px"/>
+						<img src="http://logo-load.com/uploads/posts/2016-09/javascript-logo.png" height="100px" width="180px"/>
 						<h2>JavaScript</h2>
 						<p>Published July 2016, by Mandy Chan</p>
-						<p><a href="https://github.com/mandnyc/ssml-builder" class="btn btn-primary">Get Started</a></p>
+						<p><a href="https://github.com/mandnyc/ssml-builder" class="btn btn-primary">GITHUB</a></p>
+						<a href="http://ssmlbuilder.com/api/javascript/">View API</a>
 					</div>
 				</div>
 				
@@ -145,6 +146,7 @@
 						<h2>JAVA</h2>
 						<p>Coming soon... Hurry up, Mandy!</p>
 						<p><a href="#" class="btn btn-primary">Coming soon</a></p>
+						<a href="#">View API</a>
 					</div>
 				</div>
 				
@@ -155,13 +157,13 @@
 						<img src="https://www.python.org/static/opengraph-icon-200x200.png" height="100px" width="130px"/>
 						<h2>Python</h2>
 						<p>Published Oct 2016, by Scott Umsted</p>
-						<p><a href="https://github.com/sumsted/pyssml" class="btn btn-primary">Get Started</a></p>
+						<p><a href="https://github.com/sumsted/pyssml" class="btn btn-primary">GITHUB</a></p>
+						<a href="https://github.com/sumsted/pyssml">View API</a>
 					</div>
 				</div>
 				
-
-
 			</div>
+
 
 			<div class="row watch-video text-center to-animate">
 				<h1>
@@ -172,21 +174,21 @@
 				</p>
 				<script src="https://embed.runkit.com" data-element-id="intro-element"></script>
 
-			
-			<div id="intro-element">var Speech = require('ssml-builder');
-
-var speech = new Speech();
-speech.say('Hello');
-speech.pause('1s');
-speech.say('fellow Alexa developers');
-speech.pause('500ms');
-speech.say('Testing phone numbers');
-speech.sayAs({
-              word: "+1-377-777-1888",
-              interpret: "telephone"
-            });
-speech.ssml(true);</div>
-
+				
+				<div id="intro-element">
+					var Speech = require('ssml-builder');
+					var speech = new Speech();
+					speech.say('Hello');
+					speech.pause('1s');
+					speech.say('fellow Alexa developers');
+					speech.pause('500ms');
+					speech.say('Testing phone numbers');
+					speech.sayAs({
+					              word: "+1-377-777-1888",
+					              interpret: "telephone"
+					            });
+					speech.ssml(true);
+				</div>
 			</div>
 
 		</div>
